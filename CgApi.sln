@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CgApi", "CgApi\CgApi.csproj", "{CE55FA1D-3D3E-40B6-A54E-07350C4529BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE55FA1D-3D3E-40B6-A54E-07350C4529BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE55FA1D-3D3E-40B6-A54E-07350C4529BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE55FA1D-3D3E-40B6-A54E-07350C4529BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE55FA1D-3D3E-40B6-A54E-07350C4529BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A477174-5910-47D5-97F4-2F985B64DDA5}
+	EndGlobalSection
+EndGlobal

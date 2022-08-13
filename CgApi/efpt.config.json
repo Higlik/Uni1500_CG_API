@@ -1,0 +1,67 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "cursodev_grupo2Context",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "CgApi",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Tb_Banco]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Cliente]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Contas_Contabeis]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Empresa]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Funcionario]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Moeda]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Pais]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tb_Projeto]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "pro-fifteen-hun.cursodev_grupo2",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

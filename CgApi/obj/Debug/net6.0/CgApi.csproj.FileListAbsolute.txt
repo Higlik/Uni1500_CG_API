@@ -261,3 +261,13 @@ D:\Programação\Csharp\CgApi\CgApi\obj\Debug\net6.0\refint\CgApi.dll
 D:\Programação\Csharp\CgApi\CgApi\obj\Debug\net6.0\CgApi.pdb
 D:\Programação\Csharp\CgApi\CgApi\obj\Debug\net6.0\CgApi.genruntimeconfig.cache
 D:\Programação\Csharp\CgApi\CgApi\obj\Debug\net6.0\ref\CgApi.dll
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.csproj.AssemblyReference.cache
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.AssemblyInfoInputs.cache
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.AssemblyInfo.cs
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.csproj.CoreCompileInputs.cache
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.dll
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\refint\CgApi.dll
+C:\Users\tarsi\Desktop\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.pdb

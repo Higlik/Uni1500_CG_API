@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\CgApi",
-    "\\CgApi\\Controllers"
+    "\\CgApi\\Controllers",
+    "\\CgApi\\Data",
+    "\\CgApi\\Models"
   ],
-  "SelectedNode": "\\CgApi\\Controllers\\TbMoedasController.cs",
+  "SelectedNode": "\\CgApi\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

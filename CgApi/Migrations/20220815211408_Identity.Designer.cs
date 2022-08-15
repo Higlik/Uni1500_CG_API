@@ -4,6 +4,7 @@ using CgApi;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CgApi.Migrations
 {
     [DbContext(typeof(cursodev_grupo2Context))]
-    partial class cursodev_grupo2ContextModelSnapshot : ModelSnapshot
+    [Migration("20220815211408_Identity")]
+    partial class Identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -90,9 +92,6 @@ namespace CgApi.Migrations
 
                     b.Property<decimal?>("Lucro")
                         .HasColumnType("money");
-
-                    b.Property<decimal?>("Saldo")
-                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

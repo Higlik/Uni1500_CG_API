@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CgApi.Migrations
 {
     [DbContext(typeof(cursodev_grupo2Context))]
-    [Migration("20220815204504_InitialCr")]
-    partial class InitialCr
+    [Migration("20220815211043_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

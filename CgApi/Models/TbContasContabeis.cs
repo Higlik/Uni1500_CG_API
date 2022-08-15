@@ -17,6 +17,7 @@ namespace CgApi
         public decimal? Despesas { get; set; }
         public int? FkBanco { get; set; }
 
+        public decimal? Saldo { get; set; }
         public virtual TbBanco FkBancoNavigation { get; set; }
         public virtual ICollection<TbEmpresa> TbEmpresa { get; set; }
     }

@@ -1,13 +1,7 @@
 using CgApi;
 using Microsoft.EntityFrameworkCore;
-using JWTAuthentication.Data;
-using Microsoft.EntityFrameworkCore;
 using JWTAuthentication.Models;
 using Microsoft.AspNetCore.Identity;
-using JWTAuthentication.Services;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using System.Text;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +13,7 @@ builder.Services.AddDbContext<cursodev_grupo2Context>(options =>
 
 
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddEntityFrameworkStores<cursodev_grupo2Context>()
         .AddDefaultTokenProviders();
 
 builder.Services.AddControllers();

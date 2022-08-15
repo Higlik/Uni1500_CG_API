@@ -2,17 +2,16 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using JWTAuthentication.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CgApi
 {
-    public partial class cursodev_grupo2Context : DbContext
-    {
-        public cursodev_grupo2Context()
-        {
-        }
-
+    public partial class cursodev_grupo2Context:IdentityDbContext<ApplicationUser>
+{
+    
         public cursodev_grupo2Context(DbContextOptions<cursodev_grupo2Context> options)
             : base(options)
         {
@@ -27,8 +26,11 @@ namespace CgApi
         public virtual DbSet<TbPais> TbPais { get; set; }
         public virtual DbSet<TbProjeto> TbProjeto { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
+
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<TbBanco>(entity =>
             {
                 entity.ToTable("Tb_Banco");

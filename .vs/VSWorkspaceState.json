@@ -4,8 +4,9 @@
     "\\CgApi",
     "\\CgApi\\Controllers",
     "\\CgApi\\Data",
-    "\\CgApi\\Models"
+    "\\CgApi\\Models",
+    "\\CgApi\\Properties"
   ],
-  "SelectedNode": "\\CgApi\\appsettings.json",
+  "SelectedNode": "\\CgApi.sln",
   "PreviewInSolutionExplorer": false
 }

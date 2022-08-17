@@ -11,11 +11,11 @@ namespace CgApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TbProjetoesController : ControllerBase
+    public class TbProjetosController : ControllerBase
     {
         private readonly cursodev_grupo2Context _context;
 
-        public TbProjetoesController(cursodev_grupo2Context context)
+        public TbProjetosController(cursodev_grupo2Context context)
         {
             _context = context;
         }

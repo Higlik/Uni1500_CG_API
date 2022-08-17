@@ -13,11 +13,15 @@ namespace CgApi
         public int? FkCliente { get; set; }
         public int? FkFuncionario { get; set; }
 
+
         public int? PrazoMedioFaturamento { get; set; }
-
         public int? PrazoMedioVendas { get; set; }
-
         public int? PrazoMedioRecebimento { get; set; }
+        public DateTime? DataCaixa { get; set; }
+        public int? MesCompetente { get; set; }
+        public int? ValorMedio { get; set; }
+        public DateTime? DataLancamento { get; set; }
+        public DateTime? DataVenda { get; set; }
 
         public virtual TbCliente FkClienteNavigation { get; set; }
         public virtual TbFuncionario FkFuncionarioNavigation { get; set; }

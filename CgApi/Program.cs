@@ -1,12 +1,15 @@
-using CgApi;
 using Microsoft.EntityFrameworkCore;
 using JWTAuthentication.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Microsoft.OpenApi.Models;
+using CgApi;
 using CgApi.Repositories;
 using CgApi.Repositories.Implements;
 using CgApi.Services.JWTAuthentication.Services;
 using CgApi.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,8 +26,11 @@ builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
 builder.Services.AddControllers();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors();
+
 builder.Services.AddSwaggerGen(c => {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
@@ -50,6 +56,35 @@ builder.Services.AddSwaggerGen(c => {
                     }
                 });
 });
+
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["jwt:key"])),
+        ClockSkew = TimeSpan.Zero
+    };
+});
+
+
+
+
+
+
+
+
+
+
 
 var app = builder.Build();
 

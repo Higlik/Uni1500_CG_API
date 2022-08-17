@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ExemploEntityFramework;
 using CgApi;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ExemploEntityFramework.Controllers
 {
+    [Authorize(Roles = "Contabilidade")]
     [Route("api/[controller]")]
     [ApiController]
     public class TbBancosController : ControllerBase

@@ -6,62 +6,60 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CgApi;
-using Microsoft.AspNetCore.Authorization;
 
 namespace CgApi.Controllers
 {
-    [Authorize(Roles = "Administrator")]
     [Route("api/[controller]")]
     [ApiController]
-    public class TbMoedasController : ControllerBase
+    public class TbProjetoesController : ControllerBase
     {
         private readonly cursodev_grupo2Context _context;
 
-        public TbMoedasController(cursodev_grupo2Context context)
+        public TbProjetoesController(cursodev_grupo2Context context)
         {
             _context = context;
         }
 
-        // GET: api/TbMoedas
+        // GET: api/TbProjetoes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TbMoeda>>> GetTbMoeda()
+        public async Task<ActionResult<IEnumerable<TbProjeto>>> GetTbProjeto()
         {
-          if (_context.TbMoeda == null)
+          if (_context.TbProjeto == null)
           {
               return NotFound();
           }
-            return await _context.TbMoeda.ToListAsync();
+            return await _context.TbProjeto.ToListAsync();
         }
 
-        // GET: api/TbMoedas/5
+        // GET: api/TbProjetoes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TbMoeda>> GetTbMoeda(int id)
+        public async Task<ActionResult<TbProjeto>> GetTbProjeto(int id)
         {
-          if (_context.TbMoeda == null)
+          if (_context.TbProjeto == null)
           {
               return NotFound();
           }
-            var tbMoeda = await _context.TbMoeda.FindAsync(id);
+            var tbProjeto = await _context.TbProjeto.FindAsync(id);
 
-            if (tbMoeda == null)
+            if (tbProjeto == null)
             {
                 return NotFound();
             }
 
-            return tbMoeda;
+            return tbProjeto;
         }
 
-        // PUT: api/TbMoedas/5
+        // PUT: api/TbProjetoes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTbMoeda(int id, TbMoeda tbMoeda)
+        public async Task<IActionResult> PutTbProjeto(int id, TbProjeto tbProjeto)
         {
-            if (id != tbMoeda.Id)
+            if (id != tbProjeto.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(tbMoeda).State = EntityState.Modified;
+            _context.Entry(tbProjeto).State = EntityState.Modified;
 
             try
             {
@@ -69,7 +67,7 @@ namespace CgApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TbMoedaExists(id))
+                if (!TbProjetoExists(id))
                 {
                     return NotFound();
                 }
@@ -82,23 +80,23 @@ namespace CgApi.Controllers
             return NoContent();
         }
 
-        // POST: api/TbMoedas
+        // POST: api/TbProjetoes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<TbMoeda>> PostTbMoeda(TbMoeda tbMoeda)
+        public async Task<ActionResult<TbProjeto>> PostTbProjeto(TbProjeto tbProjeto)
         {
-          if (_context.TbMoeda == null)
+          if (_context.TbProjeto == null)
           {
-              return Problem("Entity set 'cursodev_grupo2Context.TbMoeda'  is null.");
+              return Problem("Entity set 'cursodev_grupo2Context.TbProjeto'  is null.");
           }
-            _context.TbMoeda.Add(tbMoeda);
+            _context.TbProjeto.Add(tbProjeto);
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
-                if (TbMoedaExists(tbMoeda.Id))
+                if (TbProjetoExists(tbProjeto.Id))
                 {
                     return Conflict();
                 }
@@ -108,32 +106,32 @@ namespace CgApi.Controllers
                 }
             }
 
-            return CreatedAtAction("GetTbMoeda", new { id = tbMoeda.Id }, tbMoeda);
+            return CreatedAtAction("GetTbProjeto", new { id = tbProjeto.Id }, tbProjeto);
         }
 
-        // DELETE: api/TbMoedas/5
+        // DELETE: api/TbProjetoes/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTbMoeda(int id)
+        public async Task<IActionResult> DeleteTbProjeto(int id)
         {
-            if (_context.TbMoeda == null)
+            if (_context.TbProjeto == null)
             {
                 return NotFound();
             }
-            var tbMoeda = await _context.TbMoeda.FindAsync(id);
-            if (tbMoeda == null)
+            var tbProjeto = await _context.TbProjeto.FindAsync(id);
+            if (tbProjeto == null)
             {
                 return NotFound();
             }
 
-            _context.TbMoeda.Remove(tbMoeda);
+            _context.TbProjeto.Remove(tbProjeto);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool TbMoedaExists(int id)
+        private bool TbProjetoExists(int id)
         {
-            return (_context.TbMoeda?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.TbProjeto?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

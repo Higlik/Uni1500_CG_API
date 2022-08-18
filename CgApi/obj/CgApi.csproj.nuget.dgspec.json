@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {}
+    "C:\\Users\\User\\Desktop\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {
+    "C:\\Users\\User\\Desktop\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
         "projectName": "CgApi",
-        "projectPath": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
-        "packagesPath": "C:\\Users\\tarsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Uni1500_CG_API\\CgApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tarsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

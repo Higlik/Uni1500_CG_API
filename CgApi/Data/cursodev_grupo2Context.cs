@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using CgApi.Models;
 using JWTAuthentication.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace CgApi
         public virtual DbSet<TbBanco> TbBanco { get; set; }
         public virtual DbSet<TbCliente> TbCliente { get; set; }
         public virtual DbSet<TbContasContabeis> TbContasContabeis { get; set; }
+        public virtual DbSet<TbFluxoCaixa> TbFluxoCaixas { get; set; }
         public virtual DbSet<TbEmpresa> TbEmpresa { get; set; }
         public virtual DbSet<TbFuncionario> TbFuncionario { get; set; }
         public virtual DbSet<TbMoeda> TbMoeda { get; set; }
@@ -115,9 +117,8 @@ namespace CgApi
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.FkContasContabeisNavigation)
-                    .WithMany(p => p.TbEmpresa)
-                    .HasForeignKey(d => d.FkContasContabeis)
-                    .HasConstraintName("FK__Tb_Empres__FK_Co__37A5467C");
+                    .WithOne(p => p.TbEmpresa)
+                    .HasForeignKey<TbContasContabeis>(d => d.FkEmpresa);
             });
 
             modelBuilder.Entity<TbFuncionario>(entity =>
@@ -190,6 +191,14 @@ namespace CgApi
                     .WithMany(p => p.TbProjeto)
                     .HasForeignKey(d => d.FkFuncionario)
                     .HasConstraintName("FK__Tb_Projet__FK_Fu__4316F928");
+            });
+
+            modelBuilder.Entity<TbFluxoCaixa>(entity =>
+            {
+
+                entity.HasOne(d => d.ContaContabil)
+                    .WithMany(p => p.FluxoCaixa)
+                    .HasForeignKey(d => d.IdContaContabil);
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {}
+    "D:\\Programação\\UP_Git\\Uni1500\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {
+    "D:\\Programação\\UP_Git\\Uni1500\\Uni1500_CG_API\\CgApi\\CgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
+        "projectUniqueName": "D:\\Programação\\UP_Git\\Uni1500\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
         "projectName": "CgApi",
-        "projectPath": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
-        "packagesPath": "C:\\Users\\tarsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tarsi\\Desktop\\id\\Uni1500_CG_API\\CgApi\\obj\\",
+        "projectPath": "D:\\Programação\\UP_Git\\Uni1500\\Uni1500_CG_API\\CgApi\\CgApi.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "D:\\Programação\\UP_Git\\Uni1500\\Uni1500_CG_API\\CgApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tarsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -91,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

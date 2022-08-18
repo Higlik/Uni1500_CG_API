@@ -10,5 +10,7 @@ namespace CgApi.Repositories
         Task<List<TbContasContabeis>> GetAllContas();
         Task<TbContasContabeis> CalculateSaldo(decimal saldo, decimal despesa);
 
+        Task<TbContasContabeis> FluxoCaixa(DateTime dataCaixa, decimal saldo, int id);
+
     }
 }

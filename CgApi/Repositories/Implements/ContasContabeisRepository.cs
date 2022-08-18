@@ -34,12 +34,23 @@ namespace CgApi.Repositories.Implements
             throw new NotImplementedException();
         }
 
+        public async Task<List<TbContasContabeis>> FluxoCaixa(DateTime dataCaixa, decimal saldo, int id)
+        {
+            return await _Grupo2Context.TbContasContabeis.Where(
+                c => c.DataCaixa == dataCaixa && c.Saldo == saldo && c.Id == id).ToListAsync();
+        }
+
         public async Task<List<TbContasContabeis>> GetAllContas()
         {
             return await _Grupo2Context.TbContasContabeis.ToListAsync();
         }
 
         public Task<TbContasContabeis> UpdateConta(TbContasContabeis conta)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<TbContasContabeis> IContasContabeis.FluxoCaixa(DateTime dataCaixa, decimal saldo, int id)
         {
             throw new NotImplementedException();
         }

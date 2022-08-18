@@ -801,3 +801,4 @@ C:\Users\tarsi\Desktop\id\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.csproj.Cop
 C:\Users\tarsi\Desktop\id\Uni1500_CG_API\CgApi\obj\Debug\net6.0\CgApi.genruntimeconfig.cache
 C:\Users\tarsi\Desktop\id\Uni1500_CG_API\CgApi\obj\Debug\net6.0\ref\CgApi.dll
 C:\Users\tarsi\Desktop\id\Uni1500_CG_API\CgApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programação\UP_Git\Uni1500\Uni1500_CG_API\CgApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
